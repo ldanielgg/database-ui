@@ -18,6 +18,7 @@ public class DBOperations {
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery("SELECT * FROM employees");
             while (rs.next()) {
+                // Works only with certain database
                 System.out.println(rs.getString(1) + ": " + rs.getString(2) + " " + rs.getString(3));
             }
             rs.close();
