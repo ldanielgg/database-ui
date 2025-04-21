@@ -1,0 +1,44 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "UpdateEmployeeMenu",
+            "request": "launch",
+            "mainClass": "UpdateEmployeeMenu",
+            "projectName": "database_ui_72a17a38"
+        },
+        {
+            "type": "java",
+            "name": "UserMenu",
+            "request": "launch",
+            "mainClass": "UserMenu",
+            "projectName": "database_ui_72a17a38"
+        },
+        {
+            "type": "java",
+            "name": "UserMenu",
+            "request": "launch",
+            "mainClass": "UserMenu",
+            "projectName": "jdbc_example_dbad033c"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "jdbc_example_dbad033c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "classPaths": [
+                "bin",
+                "lib/mysql-connector-j-9.2.0.jar"
+            ]
+        }
+    ]
+  }
+  
