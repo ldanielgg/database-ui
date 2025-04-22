@@ -172,7 +172,7 @@ public class UserMenu {
                             System.out.println("       Employee Report       ");
                             System.out.println("=============================");
                             System.out.println();
-                            DBOperations.generateReportAllEmployees();
+                            GenerateReport.generateReportAllEmployees();
                             continue;
                         case 2:
                             System.out.println("=============================");
@@ -181,7 +181,7 @@ public class UserMenu {
                             System.out.println();
                             System.out.println("Job Title: Total Yearly Pay");
                             System.out.println();
-                            DBOperations.generateReportByJobTitle();
+                            GenerateReport.generateReportByJobTitle();
                             continue;
                         case 3:
                             System.out.println("=============================");
@@ -190,7 +190,7 @@ public class UserMenu {
                             System.out.println();
                             System.out.println("Department ID: Total Yearly Pay");
                             System.out.println();
-                            DBOperations.generateReportByDepartmentID();
+                            GenerateReport.generateReportByDepartmentID();
                             continue;
                     }
                     break;
