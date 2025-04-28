@@ -43,9 +43,9 @@ public class GenerateReport {
         try {
             Connection connection = getConnection();
             Statement statement = connection.createStatement();
-            ResultSet rs = statement.executeQuery("SELECT JobTitle, SUM(Salary) FROM employees GROUP BY JobTitle");
+            ResultSet rs = statement.executeQuery("SELECT JobTitle, SUM(Salary / 12) FROM employees GROUP BY JobTitle");
             while (rs.next()) {
-                System.out.println(rs.getString(1) + ": $" + rs.getString(2));
+                System.out.println(rs.getString(1) + ": $" + String.format("%.2f", rs.getDouble(2)));
             }
             System.out.println();
             rs.close();
@@ -61,9 +61,9 @@ public class GenerateReport {
         try {
             Connection connection = getConnection();
             Statement statement = connection.createStatement();
-            ResultSet rs = statement.executeQuery("SELECT DepartmentID, SUM(Salary) FROM employees GROUP BY DepartmentID");
+            ResultSet rs = statement.executeQuery("SELECT DepartmentID, SUM(Salary / 12) FROM employees GROUP BY DepartmentID");
             while (rs.next()) {
-                System.out.println(rs.getString(1) + ": $" + rs.getString(2));
+                System.out.println(rs.getString(1) + ": $" + String.format("%.2f", rs.getDouble(2)));
             }
             System.out.println();
             rs.close();

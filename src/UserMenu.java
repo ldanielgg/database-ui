@@ -179,7 +179,7 @@ public class UserMenu {
                             System.out.println("      Job Title Report      ");
                             System.out.println("=============================");
                             System.out.println();
-                            System.out.println("Job Title: Total Yearly Pay");
+                            System.out.println("Job Title: Total Monthly Pay");
                             System.out.println();
                             GenerateReport.generateReportByJobTitle();
                             continue;
@@ -188,7 +188,7 @@ public class UserMenu {
                             System.out.println("    Department ID Report     ");
                             System.out.println("=============================");
                             System.out.println();
-                            System.out.println("Department ID: Total Yearly Pay");
+                            System.out.println("Department ID: Total Monthly Pay");
                             System.out.println();
                             GenerateReport.generateReportByDepartmentID();
                             continue;
